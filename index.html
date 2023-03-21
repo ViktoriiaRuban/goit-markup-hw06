@@ -66,6 +66,91 @@
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
+              <p class="form-text">
+                Leave your contacts and we will call you back
+              </p>
+              <form class="form-windows">
+                <div class="div-container">
+                  <ul class="ul-form">
+                    <li class="li-forms">
+                      <label class="form-label" for="user-name">Name</label>
+                      <div class="input-icons">
+                        <input
+                          class="form-input"
+                          id="user-name"
+                          type="text"
+                          name="user-name"
+                          autofocus
+                          required
+                        />
+                        <svg class="svg-input">
+                          <use
+                            href="./images/symbol-defs.svg#icon-person"
+                          ></use>
+                        </svg>
+                      </div>
+                    </li>
+                    <li class="li-forms">
+                      <label class="form-label" for="phone">Phone</label>
+
+                      <div class="input-icons">
+                        <input
+                          class="form-input"
+                          id="phone"
+                          type="tel"
+                          name="Phone"
+                          required
+                        />
+                        <svg class="svg-input-tel">
+                          <use
+                            href="./images/symbol-defs.svg#icon-phone-black"
+                          ></use>
+                        </svg>
+                      </div>
+                    </li>
+                    <li class="li-forms">
+                      <label class="form-label" for="user-email">Email</label>
+                      <div class="input-icons">
+                        <input
+                          class="form-input"
+                          type="email"
+                          name="email"
+                          id="user-email"
+                          required
+                        />
+                        <svg class="svg-input-mail">
+                          <use
+                            href="./images/symbol-defs.svg#icon-email-black"
+                          ></use>
+                        </svg>
+                      </div>
+                    </li>
+                    <li class="form-comments">
+                      <label class="form-label" for="comments"> Comment</label>
+                      <textarea
+                        class="form-textarea text-placeholder"
+                        name="Comment"
+                        id="comments"
+                        placeholder="Text-input"
+                      ></textarea>
+                    </li>
+                  </ul>
+                  <div class="form-police">
+                    <input
+                      class="checkbox-foorm"
+                      type="checkbox"
+                      name="Privacy-Policy"
+                      id="Privacy-Policy"
+                    />
+                    <span class="checkbox-icon"> </span>
+                    <label class="checkbox-label" for="Privacy-Policy">
+                      I accept the terms and conditions of the
+                    </label>
+                    <a class="styles-link" href=""> Privacy Policy</a>
+                  </div>
+                  <button class="button-send" type="submit">Send</button>
+                </div>
+              </form>
               <button class="close" type="button" data-modal-close>
                 <svg class="vector">
                   <use href="./images/symbol-defs.svg#icon-close-black"></use>
@@ -466,11 +551,10 @@
             </li>
           </ul>
         </div>
-      </div>
 
-    <div class="footer-div">
+        <div class="footer-div">
           <p class="footer-heading">Subscribe</p>
-          <form class="form-footer" name=" ">
+          <form class="form-footer" name="">
             <input
               class="input-footer"
               type="email"
@@ -478,10 +562,11 @@
               id="user_email"
               placeholder="E-mail"
               required
-              aria-label="email"/>
-            <button class="button-footer" type="submit">
+              aria-label="email"
+            />
+            <button class="button-footer" type="Submit">
               Subscribe
-              <svg class="btn-icons">
+              <svg class="btn-icon">
                 <use href="./images/symbol-defs.svg#icon-icon-send"></use>
               </svg>
             </button>
